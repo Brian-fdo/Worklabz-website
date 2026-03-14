@@ -51,8 +51,27 @@ export default function Audit() {
     }, 2500);
   };
 
-  const submitForm = (e: React.FormEvent) => {
+  const submitForm = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Send data to Make.com Webhook
+    try {
+      await fetch('https://hook.eu1.make.com/0ddhlwartqqbzzeuhaiv4e8cvcos6oiv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          source: 'Worklabz Audit Form',
+          ...formData,
+          submittedAt: new Date().toISOString()
+        })
+      });
+    } catch (error) {
+      console.error('Error submitting form to webhook:', error);
+      // We still proceed with calculateROI so the user isn't stuck on the site
+    }
+
     calculateROI();
   };
 
