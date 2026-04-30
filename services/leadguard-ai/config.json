@@ -1,0 +1,16 @@
+{
+  "qualification_criteria": {
+    "intent": "Seeking AI automation, business systems, or offshore BPO services",
+    "budget": "Any budget mentioned (Worklabs is scalable)",
+    "company_type": "Startups, SMEs, Agencies, E-commerce, Tech companies",
+    "pain_points": [
+      "High operational costs",
+      "Manual processes",
+      "Inefficient workflows",
+      "Scaling difficulties"
+    ]
+  },
+  "llm_provider": "Worklabs_Internal",
+  "polling_interval_ms": 60000,
+  "crm_sync_enabled": true
+}

@@ -1,0 +1,54 @@
+[
+  {
+    "cluster": "BPO Automation",
+    "intent": "Educational - How AI can replace or augment traditional BPO call centers.",
+    "keywords": [
+      "AI customer service",
+      "automated BPO",
+      "reduce support costs",
+      "AI agents for businesses",
+      "traditional BPO vs AI"
+    ],
+    "primaryKeyword": "automated BPO",
+    "completed": true
+  },
+  {
+    "cluster": "AI Lead Generation",
+    "intent": "Informational/Transactional - Learning how AI can capture and qualify leads on websites and social media.",
+    "keywords": [
+      "AI lead capture",
+      "automated qualification",
+      "AI sales funnel",
+      "lead generation chatbot",
+      "convert website traffic with AI"
+    ],
+    "primaryKeyword": "AI lead capture",
+    "completed": true
+  },
+  {
+    "cluster": "AI Voice Agents for Restaurants",
+    "intent": "Educational/Transactional - How AI voice agents can handle phone orders, reservations, and customer FAQs for restaurants.",
+    "keywords": [
+      "AI voice agents",
+      "restaurant automation",
+      "AI phone answering",
+      "restaurant reservation bot",
+      "automated phone orders"
+    ],
+    "primaryKeyword": "AI voice agents for restaurants",
+    "completed": true
+  },
+  {
+    "cluster": "Automated Invoice Processing",
+    "intent": "Educational - How AI and OCR technology can automate accounts payable and invoice processing for businesses.",
+    "keywords": [
+      "automated invoice processing",
+      "accounts payable automation",
+      "AI for accounting",
+      "OCR invoice data extraction",
+      "reduce manual data entry"
+    ],
+    "primaryKeyword": "automated invoice processing",
+    "completed": false
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "faqs": [
+    {
+      "intent": "Billing",
+      "keywords": ["invoice", "billing", "charge", "payment", "card", "receipt"],
+      "resolution": "Thank you for reaching out regarding your billing inquiry. You can view and download all your invoices securely from the 'Billing' section of your Worklabs Client Dashboard. If you need a specific receipt resent, please let us know."
+    },
+    {
+      "intent": "Password_Reset",
+      "keywords": ["password", "reset", "login", "access", "locked"],
+      "resolution": "It looks like you need help accessing your account. You can reset your password immediately using this link: https://worklabz.co.uk/reset-password. If you continue to experience issues, please reply to this email and our L2 support team will assist you."
+    },
+    {
+      "intent": "Feature_Request",
+      "keywords": ["feature", "add", "suggest", "idea", "missing"],
+      "resolution": "Thank you for the fantastic suggestion! We are constantly evolving the Worklabs platform based on client feedback. I have forwarded your feature request directly to our Product Team for consideration in the next roadmap meeting."
+    }
+  ]
+}

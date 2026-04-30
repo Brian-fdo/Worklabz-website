@@ -1,0 +1,45 @@
+name: 🤖 Autonomous SEO Engine
+
+on:
+  # Runs automatically every Tuesday and Thursday at 9:00 AM UTC
+  schedule:
+    - cron: '0 9 * * 2,4'
+  
+  # Also allows you to trigger it manually from the GitHub UI with one click
+  workflow_dispatch:
+
+jobs:
+  run-seo-agent:
+    name: Generate SEO Blog Post
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 📦 Install Dependencies
+        run: npm install
+        working-directory: services/seo-agent
+
+      - name: 🚀 Run SEO Agent
+        run: node run.js
+        working-directory: services/seo-agent
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+
+      - name: 📝 Commit & Push New Blog Post
+        run: |
+          git config --global user.name "WorkLabs SEO Bot"
+          git config --global user.email "seo-bot@worklabz.co.uk"
+          git add worklabs-website/src/content/blogs/
+          git add services/seo-agent/clusters.json
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "🤖 SEO Bot: Auto-published new blog post [$(date +'%Y-%m-%d')]"
+          git push
