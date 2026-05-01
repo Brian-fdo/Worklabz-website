@@ -12,6 +12,8 @@ jobs:
   run-seo-agent:
     name: Generate SEO Blog Post
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
 
     steps:
       - name: 📥 Checkout Repository
