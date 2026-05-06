@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Calendar, Clock, Globe, ShieldCheck, CheckCircle2, ChevronRight, Check, Bot } from 'lucide-react';
+import { Calendar, Clock, Globe, ShieldCheck, CheckCircle2, Check, Bot } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Book() {
