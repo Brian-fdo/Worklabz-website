@@ -23,6 +23,7 @@ export default function Navbar() {
               <span className="w-1.5 h-1.5 rounded-full bg-primary-500 animate-pulse"></span>
               Live Demo
             </Link>
+            <Link to="/portfolio" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">Portfolio</Link>
             <Link to="/case-studies" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">Case Studies</Link>
             <Link to="/about" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">About</Link>
           </div>
@@ -61,6 +62,7 @@ export default function Navbar() {
             <div className="px-4 pt-4 pb-8 space-y-2">
               <Link onClick={() => setIsOpen(false)} to="/services" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Services</Link>
               <Link onClick={() => setIsOpen(false)} to="/solutions" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Solutions</Link>
+              <Link onClick={() => setIsOpen(false)} to="/portfolio" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Portfolio</Link>
               <Link onClick={() => setIsOpen(false)} to="/case-studies" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Case Studies</Link>
               <Link onClick={() => setIsOpen(false)} to="/about" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">About</Link>
               <Link onClick={() => setIsOpen(false)} to="/audit" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Free Audit</Link>

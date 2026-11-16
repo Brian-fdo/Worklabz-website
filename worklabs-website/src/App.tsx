@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Services from './pages/Services';
 import Solutions from './pages/Solutions';
 import CaseStudies from './pages/CaseStudies';
+import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Audit from './pages/Audit';
 import Book from './pages/Book';
@@ -54,6 +55,7 @@ export default function App() {
             <Route index element={<Home />} />
             <Route path="/services" element={<Services />} />
             <Route path="/solutions" element={<Solutions />} />
+            <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/case-studies" element={<CaseStudies />} />
             <Route path="/about" element={<About />} />
             <Route path="/audit" element={<Audit />} />
