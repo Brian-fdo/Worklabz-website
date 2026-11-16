@@ -3,7 +3,6 @@ import { ArrowRight, Users, Activity, CheckCircle2, ChevronRight, Zap } from 'lu
 import { motion } from 'framer-motion';
 import ArchitectureMap from '../components/ArchitectureMap';
 import TrustBar from '../components/TrustBar';
-import Testimonials from '../components/Testimonials';
 import PricingComparison from '../components/PricingComparison';
 import FaqSection from '../components/FaqSection';
 
@@ -258,9 +257,6 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-
-      {/* Testimonials */}
-      <Testimonials />
 
       {/* Pricing Comparison */}
       <PricingComparison />

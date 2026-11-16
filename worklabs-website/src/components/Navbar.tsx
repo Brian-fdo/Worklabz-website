@@ -24,7 +24,6 @@ export default function Navbar() {
               Live Demo
             </Link>
             <Link to="/portfolio" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">Portfolio</Link>
-            <Link to="/case-studies" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">Case Studies</Link>
             <Link to="/about" className="text-sm text-gray-400 hover:text-white transition-colors tracking-wide font-medium">About</Link>
           </div>
 
@@ -63,7 +62,6 @@ export default function Navbar() {
               <Link onClick={() => setIsOpen(false)} to="/services" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Services</Link>
               <Link onClick={() => setIsOpen(false)} to="/solutions" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Solutions</Link>
               <Link onClick={() => setIsOpen(false)} to="/portfolio" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Portfolio</Link>
-              <Link onClick={() => setIsOpen(false)} to="/case-studies" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Case Studies</Link>
               <Link onClick={() => setIsOpen(false)} to="/about" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">About</Link>
               <Link onClick={() => setIsOpen(false)} to="/audit" className="block px-3 py-3 rounded-xl text-base font-semibold text-gray-300 hover:text-white hover:bg-dark-surface transition-all">Free Audit</Link>
               <Link onClick={() => setIsOpen(false)} to="/book" className="block px-3 py-4 rounded-xl text-base font-bold text-center bg-white text-dark-surface shadow-lg">Book Consultation</Link>

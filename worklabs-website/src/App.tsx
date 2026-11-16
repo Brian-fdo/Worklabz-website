@@ -1,10 +1,9 @@
-import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Outlet, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Services from './pages/Services';
 import Solutions from './pages/Solutions';
-import CaseStudies from './pages/CaseStudies';
 import Portfolio from './pages/Portfolio';
 import About from './pages/About';
 import Audit from './pages/Audit';
@@ -56,7 +55,10 @@ export default function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/portfolio" element={<Portfolio />} />
-            <Route path="/case-studies" element={<CaseStudies />} />
+            {/* /case-studies held invented clients and was removed. It is kept
+                as a redirect rather than deleted outright, because the URL has
+                been linked and indexed and a 404 loses that for nothing. */}
+            <Route path="/case-studies" element={<Navigate to="/portfolio" replace />} />
             <Route path="/about" element={<About />} />
             <Route path="/audit" element={<Audit />} />
             <Route path="/book" element={<Book />} />
